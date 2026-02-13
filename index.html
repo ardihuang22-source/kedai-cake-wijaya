@@ -2,41 +2,58 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Valentine SaaS 💕</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://unpkg.com/html5-qrcode"></script>
+<title>Do You Love Me? 💕</title>
+
+<style>
+body{
+    margin:0;
+    text-align:center;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fecfef);
+    color:white;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+h1{font-size:36px;margin-bottom:10px;}
+h2{margin-bottom:30px;}
+
+button{
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+}
+
+#yesBtn{
+    background:#ff4d6d;
+    color:white;
+}
+
+#noBtn{
+    background:gray;
+    color:white;
+}
+
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+</style>
 </head>
 
 <body>
 
-<h1>Valentine System Initializing 💕</h1>
-<h2 id="countdown">Starting in 5...</h2>
+<h1>Hey Pei Xian 💖</h1>
+<h2>Do you love Ardi? 😏</h2>
 
-<div id="mainContent">
-    <h1>Hey Pei Xian 💖</h1>
-    <h2>Do you love Ardi? 😏</h2>
-
-    <p>Type exactly: <b>I love Ardi</b></p>
-    <input id="loveInput" oninput="checkInput()" placeholder="Type here...">
-
-    <br><br>
-    <button id="yesBtn" onclick="yesClicked()">YES 💖</button>
-    <button id="noBtn" onmouseover="moveButton()">NO 😢</button>
-
-    <br><br>
-    <button onclick="takeScreenshot()">📸 Send Screenshot Proof</button>
-
-    <br><br>
-    <h3>Scan QR Code to Unlock Bonus 💌</h3>
-    <div id="reader"></div>
-</div>
-
-<audio id="bgMusic" loop>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-</audio>
-
-<canvas id="fireworks"></canvas>
-
-<script src="script.js"></script>
-</body>
-</html>
+<div>
+    <button
