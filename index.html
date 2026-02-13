@@ -3,51 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Do You Love Me? 💕</title>
-
-<style>
-body{
-    margin:0;
-    text-align:center;
-    font-family:Arial, sans-serif;
-    background:linear-gradient(135deg,#ff9a9e,#fecfef);
-    color:white;
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-h1{font-size:36px;margin-bottom:10px;}
-h2{margin-bottom:30px;}
-
-button{
-    padding:15px 30px;
-    font-size:18px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    margin:10px;
-    transition:0.3s;
-}
-
-#yesBtn{
-    background:#ff4d6d;
-    color:white;
-}
-
-#noBtn{
-    background:gray;
-    color:white;
-}
-
-canvas{
-    position:fixed;
-    top:0;
-    left:0;
-    pointer-events:none;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -55,5 +11,13 @@ canvas{
 <h1>Hey Pei Xian 💖</h1>
 <h2>Do you love Ardi? 😏</h2>
 
-<div>
-    <button
+<div class="buttons">
+    <button id="yesBtn">YES 💕</button>
+    <button id="noBtn">NO 😢</button>
+</div>
+
+<canvas id="fireworks"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
