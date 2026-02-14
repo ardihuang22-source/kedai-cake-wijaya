@@ -3,6 +3,33 @@ const noBtn = document.getElementById("noBtn");
 const popup = document.getElementById("popupMessage");
 const music = document.getElementById("bgMusic");
 const countdownEl = document.getElementById("countdown");
+const music = document.getElementById("bgMusic");
+const countdownEl = document.getElementById("countdown");
+
+let timeLeft = 10;
+let readyToPlay = false;
+
+// Countdown
+const timer = setInterval(() => {
+    timeLeft--;
+    countdownEl.innerHTML = "Music starts in " + timeLeft + " seconds...";
+
+    if (timeLeft <= 0) {
+        clearInterval(timer);
+        countdownEl.innerHTML = "Click anywhere to start music 🎵";
+        readyToPlay = true;
+    }
+}, 1000);
+
+// Play after user interaction
+document.addEventListener("click", function () {
+    if (readyToPlay) {
+        music.play().catch(err => {
+            console.log("Autoplay blocked:", err);
+        });
+    }
+}, { once: true });
+
 
 // ===== Countdown Before Music =====
 let timeLeft = 10;
