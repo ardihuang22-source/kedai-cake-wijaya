@@ -1,1 +1,7 @@
-a-thousand-years.mp3
+<!-- Embed official video -->
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/NZGHXy1IAHM?autoplay=1&loop=1&playlist=NZGHXy1IAHM"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+</iframe>
